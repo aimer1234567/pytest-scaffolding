@@ -1,6 +1,6 @@
-# 一个pytest搭建的测试框架
+# 一个pytest搭建的测试框架，集成uiautomator2 demo，采用pageobject模式进行ui测试
 
-@data_driven_test：目前封装@pytest.mark.parametrize，实现了数据文件目录映射装饰器，实现参数化驱动测试，简化测试数据管理
+@data_driven_test：目前封装@pytest.mark.parametrize，实现了数据文件与测试用例映射装饰器，实现参数化驱动测试，简化测试数据管理
 ```
 @data_driven_test
 def test_1(hhh,ddd,mmm):
