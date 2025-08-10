@@ -7,7 +7,7 @@ import csv
 import pandas as pd
 class DataMappingConfig:
         mapping_folder="data"
-        default_file=".csv"
+        target="testCase"
 
 data_type = {'csv', 'xlsx'}
               
@@ -19,8 +19,9 @@ def data_mapping(func_name):
     caller_file = os.path.abspath(caller_frame.filename)
     cwd= os.getcwd()
     caller_path=caller_file[cwd.__len__()+1:]
+    print(caller_path)
     caller_path_list=caller_path.split('\\')
-    caller_path_list[0]=DataMappingConfig.mapping_folder
+    caller_path_list[caller_path_list.index(DataMappingConfig.target)]=DataMappingConfig.mapping_folder
     caller_path_list[-1]=caller_path_list[-1].replace('.py', f'\\{func_name}.*')
     mapping_path="\\".join(caller_path_list)
     mapping_path=cwd+'\\'+mapping_path

@@ -1,0 +1,851 @@
+<?xml version="1.0" ?>
+<hierarchy rotation="0">
+  
+  
+  <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,100]" drawing-order="0" hint="" display-id="0">
+    
+    
+    <node index="0" text="" resource-id="com.android.systemui:id/status_bar_launch_animation_container" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,100]" drawing-order="1" hint="" display-id="0"/>
+    
+    
+    <node index="1" text="" resource-id="com.android.systemui:id/status_bar_container" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,100]" drawing-order="2" hint="" display-id="0">
+      
+      
+      <node index="0" text="" resource-id="com.android.systemui:id/status_bar" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,100]" drawing-order="1" hint="" display-id="0">
+        
+        
+        <node index="0" text="" resource-id="com.android.systemui:id/status_bar_contents" class="android.widget.LinearLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[40,0][1040,100]" drawing-order="2" hint="" display-id="0">
+          
+          
+          <node index="0" text="" resource-id="com.android.systemui:id/phone_status_bar_left_container" class="android.widget.LinearLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[43,36][504,100]" drawing-order="1" hint="" display-id="0">
+            
+            
+            <node index="0" text="下午2:40" resource-id="com.android.systemui:id/clock" class="android.widget.TextView" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[43,36][199,100]" drawing-order="4" hint="" display-id="0"/>
+            
+            
+            <node index="2" text=" | " resource-id="com.android.systemui:id/drip_network_speed_splitter" class="android.widget.TextView" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[199,36][230,100]" drawing-order="6" hint="" display-id="0"/>
+            
+            
+            <node index="3" text="3.3K/s" resource-id="com.android.systemui:id/drip_network_speed_view" class="android.widget.TextView" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[230,36][343,100]" drawing-order="7" hint="" display-id="0"/>
+            
+            
+            <node index="4" text="" resource-id="com.android.systemui:id/drip_left_status_icon_area" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[343,36][393,100]" drawing-order="8" hint="" display-id="0">
+              
+              
+              <node index="0" text="" resource-id="com.android.systemui:id/drip_left_statusIcons" class="android.widget.LinearLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[343,36][393,100]" drawing-order="1" hint="" display-id="0">
+                
+                
+                <node index="0" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="振铃器静音。" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[343,40][393,96]" drawing-order="2" hint="" display-id="0"/>
+                
+              
+              </node>
+              
+            
+            </node>
+            
+            
+            <node index="5" text="" resource-id="com.android.systemui:id/drip_notification_icon_area" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[393,36][504,100]" drawing-order="9" hint="" display-id="0">
+              
+              
+              <node index="0" text="" resource-id="com.android.systemui:id/notification_icon_area_inner" class="android.widget.LinearLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[393,36][504,100]" drawing-order="1" hint="" display-id="0">
+                
+                
+                <node index="0" text="" resource-id="com.android.systemui:id/notificationIcons" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[393,36][504,100]" drawing-order="1" hint="" display-id="0">
+                  
+                  
+                  <node index="0" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="Android 系统通知：" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[393,50][443,86]" drawing-order="1" hint="" display-id="0"/>
+                  
+                  
+                  <node index="1" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="手机管家通知：" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[443,50][493,86]" drawing-order="2" hint="" display-id="0"/>
+                  
+                  
+                  <node index="2" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="小米云备份通知：设备备份失败" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[493,50][504,86]" drawing-order="5" hint="" display-id="0"/>
+                  
+                  
+                  <node index="3" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="系统更新通知：新版本已经准备好" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[493,50][504,86]" drawing-order="4" hint="" display-id="0"/>
+                  
+                  
+                  <node index="4" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="应用商店通知：应用包管理组件已自动升级" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[493,50][504,86]" drawing-order="3" hint="" display-id="0"/>
+                  
+                
+                </node>
+                
+              
+              </node>
+              
+            
+            </node>
+            
+          
+          </node>
+          
+          
+          <node index="1" text="" resource-id="com.android.systemui:id/cutout_space_view" class="android.view.View" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[504,18][576,100]" drawing-order="2" hint="" display-id="0"/>
+          
+          
+          <node index="2" text="" resource-id="com.android.systemui:id/system_icon_area" class="android.view.ViewGroup" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[576,36][1037,100]" drawing-order="3" hint="" display-id="0">
+            
+            
+            <node index="0" text="" resource-id="com.android.systemui:id/system_icons" class="android.view.ViewGroup" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[819,36][1037,100]" drawing-order="3" hint="" display-id="0">
+              
+              
+              <node index="0" text="" resource-id="com.android.systemui:id/statusIcons" class="android.widget.LinearLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[819,36][935,100]" drawing-order="1" hint="" display-id="0">
+                
+                
+                <node index="0" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="没有 SIM 卡" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[819,40][875,96]" drawing-order="25" hint="" display-id="0"/>
+                
+                
+                <node index="1" text="" resource-id="com.android.systemui:id/wifi_combo" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="WLAN 信号满格。" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[875,40][935,96]" drawing-order="29" hint="" display-id="0">
+                  
+                  
+                  <node index="0" text="" resource-id="com.android.systemui:id/wifi_group" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[875,40][935,96]" drawing-order="1" hint="" display-id="0">
+                    
+                    
+                    <node index="0" text="" resource-id="com.android.systemui:id/wifi_signal" class="android.widget.ImageView" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[875,40][935,96]" drawing-order="1" hint="" display-id="0"/>
+                    
+                    
+                    <node index="1" text="" resource-id="com.android.systemui:id/wifi_activity" class="android.widget.ImageView" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[906,40][935,96]" drawing-order="2" hint="" display-id="0"/>
+                    
+                  
+                  </node>
+                  
+                
+                </node>
+                
+              
+              </node>
+              
+              
+              <node index="1" text="" resource-id="com.android.systemui:id/battery" class="android.widget.LinearLayout" package="com.android.systemui" content-desc="正在充电，已完成 100%。" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[935,36][1037,100]" drawing-order="2" hint="" display-id="0">
+                
+                
+                <node index="0" text="" resource-id="com.android.systemui:id/battery_icon_container" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[935,36][1019,100]" drawing-order="1" hint="" display-id="0">
+                  
+                  
+                  <node index="0" text="" resource-id="com.android.systemui:id/battery_image" class="android.widget.ImageView" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[935,40][1019,96]" drawing-order="1" hint="" display-id="0"/>
+                  
+                  
+                  <node index="1" text="100" resource-id="com.android.systemui:id/battery_digit" class="android.widget.TextView" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[955,52][993,84]" drawing-order="3" hint="" display-id="0"/>
+                  
+                
+                </node>
+                
+                
+                <node index="1" text="" resource-id="com.android.systemui:id/battery_charge_out_image" class="android.widget.ImageView" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[1019,36][1037,100]" drawing-order="2" hint="" display-id="0"/>
+                
+              
+              </node>
+              
+            
+            </node>
+            
+          
+          </node>
+          
+        
+        </node>
+        
+      
+      </node>
+      
+    
+    </node>
+    
+  
+  </node>
+  
+  
+  <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.miui.home" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,2392][1080,2460]" drawing-order="0" hint="" display-id="0"/>
+  
+  
+  <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2460]" drawing-order="0" hint="" display-id="0">
+    
+    
+    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2460]" drawing-order="1" hint="" display-id="0">
+      
+      
+      <node index="0" text="" resource-id="" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2416]" drawing-order="1" hint="" display-id="0">
+        
+        
+        <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2416]" drawing-order="2" hint="" display-id="0">
+          
+          
+          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2416]" drawing-order="1" hint="" display-id="0">
+            
+            
+            <node index="0" text="" resource-id="android:id/content" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2416]" drawing-order="2" hint="" display-id="0">
+              
+              
+              <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="false" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2416]" drawing-order="1" hint="" display-id="0">
+                
+                
+                <node index="0" text="" resource-id="" class="androidx.drawerlayout.widget.DrawerLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2416]" drawing-order="1" hint="" display-id="0">
+                  
+                  
+                  <node index="0" text="" resource-id="" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2416]" drawing-order="1" hint="" display-id="0">
+                    
+                    
+                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.RelativeLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2416]" drawing-order="3" hint="" display-id="0">
+                      
+                      
+                      <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="androidx.viewpager.widget.ViewPager" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="true" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2292]" drawing-order="1" hint="" display-id="0">
+                        
+                        
+                        <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2292]" drawing-order="1" hint="" display-id="0">
+                          
+                          
+                          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2292]" drawing-order="1" hint="" display-id="0">
+                            
+                            
+                            <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="androidx.viewpager.widget.ViewPager" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="true" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2292]" drawing-order="1" hint="" display-id="0">
+                              
+                              
+                              <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2292]" drawing-order="1" hint="" display-id="0">
+                                
+                                
+                                <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,221][1080,2292]" drawing-order="1" hint="" display-id="0">
+                                  
+                                  
+                                  <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,221][1080,331]" drawing-order="1" hint="" display-id="0">
+                                    
+                                    
+                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.RelativeLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,221][1080,331]" drawing-order="1" hint="" display-id="0">
+                                      
+                                      
+                                      <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="androidx.recyclerview.widget.RecyclerView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="true" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,221][997,331]" drawing-order="1" hint="" display-id="0">
+                                        
+                                        
+                                        <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,221][150,331]" drawing-order="1" hint="" display-id="0">
+                                          
+                                          
+                                          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="已选定推荐" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,248][150,303]" drawing-order="1" hint="" display-id="0">
+                                            
+                                            
+                                            <node index="0" text="推荐" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,248][150,303]" drawing-order="2" hint="" display-id="0"/>
+                                            
+                                          
+                                          </node>
+                                          
+                                        
+                                        </node>
+                                        
+                                        
+                                        <node index="1" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[150,221][300,331]" drawing-order="2" hint="" display-id="0">
+                                          
+                                          
+                                          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="直播" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[150,248][300,303]" drawing-order="1" hint="" display-id="0">
+                                            
+                                            
+                                            <node index="0" text="直播" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[150,248][300,303]" drawing-order="2" hint="" display-id="0"/>
+                                            
+                                          
+                                          </node>
+                                          
+                                        
+                                        </node>
+                                        
+                                        
+                                        <node index="2" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[300,221][450,331]" drawing-order="3" hint="" display-id="0">
+                                          
+                                          
+                                          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="短剧" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[300,248][450,303]" drawing-order="1" hint="" display-id="0">
+                                            
+                                            
+                                            <node index="0" text="短剧" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[300,248][450,303]" drawing-order="2" hint="" display-id="0"/>
+                                            
+                                          
+                                          </node>
+                                          
+                                        
+                                        </node>
+                                        
+                                        
+                                        <node index="3" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[450,221][600,331]" drawing-order="4" hint="" display-id="0">
+                                          
+                                          
+                                          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="美食" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[450,248][600,303]" drawing-order="1" hint="" display-id="0">
+                                            
+                                            
+                                            <node index="0" text="美食" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[450,248][600,303]" drawing-order="2" hint="" display-id="0"/>
+                                            
+                                          
+                                          </node>
+                                          
+                                        
+                                        </node>
+                                        
+                                        
+                                        <node index="4" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[600,221][750,331]" drawing-order="5" hint="" display-id="0">
+                                          
+                                          
+                                          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="穿搭" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[600,248][750,303]" drawing-order="1" hint="" display-id="0">
+                                            
+                                            
+                                            <node index="0" text="穿搭" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[600,248][750,303]" drawing-order="2" hint="" display-id="0"/>
+                                            
+                                          
+                                          </node>
+                                          
+                                        
+                                        </node>
+                                        
+                                        
+                                        <node index="5" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[750,221][900,331]" drawing-order="6" hint="" display-id="0">
+                                          
+                                          
+                                          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="手工" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[750,248][900,303]" drawing-order="1" hint="" display-id="0">
+                                            
+                                            
+                                            <node index="0" text="手工" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[750,248][900,303]" drawing-order="2" hint="" display-id="0"/>
+                                            
+                                          
+                                          </node>
+                                          
+                                        
+                                        </node>
+                                        
+                                        
+                                        <node index="6" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[900,221][997,331]" drawing-order="7" hint="" display-id="0">
+                                          
+                                          
+                                          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="动漫" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[900,248][997,303]" drawing-order="1" hint="" display-id="0">
+                                            
+                                            
+                                            <node index="0" text="动漫" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[900,248][997,303]" drawing-order="2" hint="" display-id="0"/>
+                                            
+                                          
+                                          </node>
+                                          
+                                        
+                                        </node>
+                                        
+                                      
+                                      </node>
+                                      
+                                    
+                                    </node>
+                                    
+                                  
+                                  </node>
+                                  
+                                  
+                                  <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,221][1080,331]" drawing-order="2" hint="" display-id="0">
+                                    
+                                    
+                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.RelativeLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,221][1080,331]" drawing-order="1" hint="" display-id="0">
+                                      
+                                      
+                                      <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[915,221][1080,331]" drawing-order="1" hint="" display-id="0"/>
+                                      
+                                      
+                                      <node NAF="true" index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[1003,254][1047,298]" drawing-order="2" hint="" display-id="0"/>
+                                      
+                                    
+                                    </node>
+                                    
+                                  
+                                  </node>
+                                  
+                                  
+                                  <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="androidx.viewpager.widget.ViewPager" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="true" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,331][1080,2292]" drawing-order="3" hint="" display-id="0">
+                                    
+                                    
+                                    <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,331][1080,2292]" drawing-order="1" hint="" display-id="0">
+                                      
+                                      
+                                      <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,331][1080,2292]" drawing-order="1" hint="" display-id="0">
+                                        
+                                        
+                                        <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,331][1080,2292]" drawing-order="1" hint="" display-id="0">
+                                          
+                                          
+                                          <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="androidx.recyclerview.widget.RecyclerView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="true" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,331][1080,2292]" drawing-order="1" hint="" display-id="0">
+                                            
+                                            
+                                            <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="笔记  当我以为没人时 来自木木斤 3390赞" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[13,331][534,899]" drawing-order="1" hint="" display-id="0">
+                                              
+                                              
+                                              <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[13,331][534,899]" drawing-order="1" hint="" display-id="0">
+                                                
+                                                
+                                                <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,331][534,899]" drawing-order="1" hint="" display-id="0">
+                                                  
+                                                  
+                                                  <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,331][534,711]" drawing-order="1" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,331][534,711]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                  
+                                                  <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,736][534,792]" drawing-order="3" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.View" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[41,736][507,792]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                  
+                                                  <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,792][523,899]" drawing-order="4" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.View" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[29,809][101,881]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="1" text="木木斤" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[112,826][358,864]" drawing-order="2" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.RelativeLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[358,792][521,899]" drawing-order="3" hint="" display-id="0">
+                                                      
+                                                      
+                                                      <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[358,804][441,887]" drawing-order="2" hint="" display-id="0"/>
+                                                      
+                                                      
+                                                      <node index="1" text="3390" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[430,823][507,868]" drawing-order="1" hint="" display-id="0"/>
+                                                      
+                                                    
+                                                    </node>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                
+                                                </node>
+                                                
+                                              
+                                              </node>
+                                              
+                                            
+                                            </node>
+                                            
+                                            
+                                            <node index="1" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="笔记  因为我养三，前妻和我离婚，分开后孩子跟我，她就去/外面工作了。五一假期的/时候她 来自三清 53赞" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[13,912][534,1858]" drawing-order="3" hint="" display-id="0">
+                                              
+                                              
+                                              <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[13,912][534,1858]" drawing-order="1" hint="" display-id="0">
+                                                
+                                                
+                                                <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,912][534,1858]" drawing-order="1" hint="" display-id="0">
+                                                  
+                                                  
+                                                  <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,912][534,1604]" drawing-order="1" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,912][534,1604]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                  
+                                                  <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,1629][534,1751]" drawing-order="3" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.View" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[41,1629][507,1751]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                  
+                                                  <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,1751][523,1858]" drawing-order="4" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.View" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[29,1768][101,1840]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="1" text="三清" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[112,1785][397,1823]" drawing-order="2" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.RelativeLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[397,1751][521,1858]" drawing-order="3" hint="" display-id="0">
+                                                      
+                                                      
+                                                      <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[397,1763][480,1846]" drawing-order="2" hint="" display-id="0"/>
+                                                      
+                                                      
+                                                      <node index="1" text="53" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[469,1782][507,1827]" drawing-order="1" hint="" display-id="0"/>
+                                                      
+                                                    
+                                                    </node>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                
+                                                </node>
+                                                
+                                              
+                                              </node>
+                                              
+                                            
+                                            </node>
+                                            
+                                            
+                                            <node index="2" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="笔记  第一条作品 不到24小时 来自稀里糊涂的二云 42赞" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[546,331][1067,999]" drawing-order="2" hint="" display-id="0">
+                                              
+                                              
+                                              <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[546,331][1067,999]" drawing-order="1" hint="" display-id="0">
+                                                
+                                                
+                                                <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,331][1067,999]" drawing-order="1" hint="" display-id="0">
+                                                  
+                                                  
+                                                  <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,331][1067,811]" drawing-order="1" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,331][1067,811]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                  
+                                                  <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,836][1067,892]" drawing-order="3" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.View" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[574,836][1040,892]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                  
+                                                  <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,892][1056,999]" drawing-order="4" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.View" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[562,909][634,981]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="1" text="稀里糊涂的二云" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[645,926][927,964]" drawing-order="2" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.RelativeLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[927,892][1054,999]" drawing-order="3" hint="" display-id="0">
+                                                      
+                                                      
+                                                      <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[927,904][1010,987]" drawing-order="2" hint="" display-id="0"/>
+                                                      
+                                                      
+                                                      <node index="1" text="42" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[999,923][1040,968]" drawing-order="1" hint="" display-id="0"/>
+                                                      
+                                                    
+                                                    </node>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                
+                                                </node>
+                                                
+                                              
+                                              </node>
+                                              
+                                            
+                                            </node>
+                                            
+                                            
+                                            <node index="3" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="视频  这种感觉呢 来自球球宸 1.0万赞" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[13,1871][534,2292]" drawing-order="5" hint="" display-id="0">
+                                              
+                                              
+                                              <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[13,1871][534,2292]" drawing-order="1" hint="" display-id="0">
+                                                
+                                                
+                                                <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,1871][534,2292]" drawing-order="1" hint="" display-id="0">
+                                                  
+                                                  
+                                                  <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,1871][534,2292]" drawing-order="1" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[13,1871][534,2292]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[451,1899][506,1954]" drawing-order="6" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                
+                                                </node>
+                                                
+                                              
+                                              </node>
+                                              
+                                            
+                                            </node>
+                                            
+                                            
+                                            <node index="4" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="笔记  单主自带价28万约我 来自皮埃尔（有课） 6024赞" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[546,1012][1067,1894]" drawing-order="4" hint="" display-id="0">
+                                              
+                                              
+                                              <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[546,1012][1067,1894]" drawing-order="1" hint="" display-id="0">
+                                                
+                                                
+                                                <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,1012][1067,1894]" drawing-order="1" hint="" display-id="0">
+                                                  
+                                                  
+                                                  <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,1012][1067,1706]" drawing-order="1" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,1012][1067,1706]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                  
+                                                  <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,1731][1067,1787]" drawing-order="3" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.View" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[574,1731][1040,1787]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                  
+                                                  <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,1787][1056,1894]" drawing-order="4" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.View" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[562,1804][634,1876]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="1" text="皮埃尔（有课）" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[645,1821][890,1859]" drawing-order="2" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.RelativeLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[890,1787][1054,1894]" drawing-order="3" hint="" display-id="0">
+                                                      
+                                                      
+                                                      <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[890,1799][973,1882]" drawing-order="2" hint="" display-id="0"/>
+                                                      
+                                                      
+                                                      <node index="1" text="6024" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[962,1818][1040,1863]" drawing-order="1" hint="" display-id="0"/>
+                                                      
+                                                    
+                                                    </node>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                
+                                                </node>
+                                                
+                                              
+                                              </node>
+                                              
+                                            
+                                            </node>
+                                            
+                                            
+                                            <node index="5" text="" resource-id="" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="视频  真的太好吃了，忍不住再发一次！ 来自小七的厨房 1285赞" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[546,1907][1067,2292]" drawing-order="6" hint="" display-id="0">
+                                              
+                                              
+                                              <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[546,1907][1067,2292]" drawing-order="1" hint="" display-id="0">
+                                                
+                                                
+                                                <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,1907][1067,2292]" drawing-order="1" hint="" display-id="0">
+                                                  
+                                                  
+                                                  <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,1907][1067,2292]" drawing-order="1" hint="" display-id="0">
+                                                    
+                                                    
+                                                    <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[546,1907][1067,2292]" drawing-order="1" hint="" display-id="0"/>
+                                                    
+                                                    
+                                                    <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[984,1935][1039,1990]" drawing-order="6" hint="" display-id="0"/>
+                                                    
+                                                  
+                                                  </node>
+                                                  
+                                                
+                                                </node>
+                                                
+                                              
+                                              </node>
+                                              
+                                            
+                                            </node>
+                                            
+                                          
+                                          </node>
+                                          
+                                        
+                                        </node>
+                                        
+                                      
+                                      </node>
+                                      
+                                    
+                                    </node>
+                                    
+                                  
+                                  </node>
+                                  
+                                
+                                </node>
+                                
+                              
+                              </node>
+                              
+                            
+                            </node>
+                            
+                          
+                          </node>
+                          
+                          
+                          <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,221]" drawing-order="2" hint="" display-id="0">
+                            
+                            
+                            <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,111][1080,210]" drawing-order="4" hint="" display-id="0">
+                              
+                              
+                              <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.Button" package="com.xingin.xhs" content-desc="搜索" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[956,111][1055,210]" drawing-order="3" hint="" display-id="0"/>
+                              
+                            
+                            </node>
+                            
+                            
+                            <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.FrameLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,111][1080,210]" drawing-order="2" hint="" display-id="0">
+                              
+                              
+                              <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="菜单" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[25,111][124,210]" drawing-order="2" hint="" display-id="0"/>
+                              
+                              
+                              <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.HorizontalScrollView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[342,116][738,204]" drawing-order="3" hint="" display-id="0">
+                                
+                                
+                                <node index="0" text="" resource-id="" class="android.widget.LinearLayout" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[342,116][738,204]" drawing-order="1" hint="" display-id="0">
+                                  
+                                  
+                                  <node index="0" text="" resource-id="" class="androidx.appcompat.app.ActionBar$Tab" package="com.xingin.xhs" content-desc="关注" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[342,116][474,204]" drawing-order="1" hint="" display-id="0">
+                                    
+                                    
+                                    <node index="0" text="关注" resource-id="" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[369,134][447,186]" drawing-order="2" hint="" display-id="0"/>
+                                    
+                                  
+                                  </node>
+                                  
+                                  
+                                  <node index="1" text="" resource-id="" class="androidx.appcompat.app.ActionBar$Tab" package="com.xingin.xhs" content-desc="发现" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="true" visible-to-user="true" bounds="[474,116][606,204]" drawing-order="2" hint="" display-id="0">
+                                    
+                                    
+                                    <node index="0" text="发现" resource-id="" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="true" visible-to-user="true" bounds="[501,134][579,186]" drawing-order="2" hint="" display-id="0"/>
+                                    
+                                  
+                                  </node>
+                                  
+                                  
+                                  <node index="2" text="" resource-id="" class="androidx.appcompat.app.ActionBar$Tab" package="com.xingin.xhs" content-desc="附近" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[606,116][738,204]" drawing-order="3" hint="" display-id="0">
+                                    
+                                    
+                                    <node index="0" text="厦门" resource-id="" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[633,134][711,186]" drawing-order="2" hint="" display-id="0"/>
+                                    
+                                  
+                                  </node>
+                                  
+                                
+                                </node>
+                                
+                              
+                              </node>
+                              
+                            
+                            </node>
+                            
+                            
+                            <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.View" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,220][1080,221]" drawing-order="3" hint="" display-id="0"/>
+                            
+                          
+                          </node>
+                          
+                        
+                        </node>
+                        
+                      
+                      </node>
+                      
+                    
+                    </node>
+                    
+                  
+                  </node>
+                  
+                  
+                  <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1080,2416]" drawing-order="2" hint="" display-id="0">
+                    
+                    
+                    <node index="0" text="" resource-id="" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,2292][1080,2416]" drawing-order="2" hint="" display-id="0">
+                      
+                      
+                      <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="首页" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="true" visible-to-user="true" bounds="[0,2292][216,2416]" drawing-order="2" hint="" display-id="0">
+                        
+                        
+                        <node index="0" text="首页" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="true" visible-to-user="true" bounds="[60,2324][156,2389]" drawing-order="2" hint="" display-id="0"/>
+                        
+                      
+                      </node>
+                      
+                      
+                      <node index="1" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="视频" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[216,2292][432,2416]" drawing-order="3" hint="" display-id="0">
+                        
+                        
+                        <node index="0" text="视频" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[280,2327][368,2386]" drawing-order="2" hint="" display-id="0"/>
+                        
+                      
+                      </node>
+                      
+                      
+                      <node index="2" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.RelativeLayout" package="com.xingin.xhs" content-desc="发布" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" visible-to-user="true" bounds="[432,2292][648,2416]" drawing-order="4" hint="" display-id="0">
+                        
+                        
+                        <node index="0" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.ImageView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[457,2292][622,2416]" drawing-order="1" hint="" display-id="0"/>
+                        
+                      
+                      </node>
+                      
+                      
+                      <node index="3" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="消息" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[648,2292][864,2416]" drawing-order="5" hint="" display-id="0">
+                        
+                        
+                        <node index="0" text="消息" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[712,2327][800,2386]" drawing-order="2" hint="" display-id="0"/>
+                        
+                      
+                      </node>
+                      
+                      
+                      <node index="4" text="" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.view.ViewGroup" package="com.xingin.xhs" content-desc="我" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[864,2292][1080,2416]" drawing-order="6" hint="" display-id="0">
+                        
+                        
+                        <node index="0" text="我" resource-id="com.xingin.xhs:id/0_resource_name_obfuscated" class="android.widget.TextView" package="com.xingin.xhs" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[950,2327][994,2386]" drawing-order="2" hint="" display-id="0"/>
+                        
+                      
+                      </node>
+                      
+                    
+                    </node>
+                    
+                  
+                  </node>
+                  
+                
+                </node>
+                
+              
+              </node>
+              
+            
+            </node>
+            
+          
+          </node>
+          
+        
+        </node>
+        
+      
+      </node>
+      
+    
+    </node>
+    
+  
+  </node>
+  
+
+</hierarchy>
