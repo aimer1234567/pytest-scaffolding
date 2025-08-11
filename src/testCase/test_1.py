@@ -24,3 +24,29 @@ def test_search(test_init,data):
     searchPage=SearchPage(d)
     searchPage.input(data)
     assert isCurrentActivity(d,"com.xingin.alioth.search.GlobalSearchActivity")
+    
+def test_clickLike(test_init):
+    """点击喜欢，判断喜欢数+1
+
+    Args:
+        test_init (_type_): _description_
+    """
+    d=test_init
+    homePage=HomePage(d)
+    likeBefore=homePage.getLikeNum()
+    homePage.clickLike()
+    likeAfter=homePage.getLikeNum()
+    assert likeAfter==likeBefore+1
+    
+def test_unLike(test_init):
+    """取消喜欢，判断喜欢数-1
+
+    Args:
+        test_init (_type_): _description_
+    """
+    d=test_init
+    homePage=HomePage(d)
+    likeBefore=homePage.getLikeNum()
+    homePage.clickLike()
+    likeAfter=homePage.getLikeNum()
+    assert likeAfter==likeBefore-1
