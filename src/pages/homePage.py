@@ -1,24 +1,24 @@
 import uiautomator2 as u2
 from utils.xml_tools import xmlElementToUiObject,slip
 class HomePage():
-    widgets={
-        "mainContentXpath":'//androidx.drawerlayout.widget.DrawerLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/androidx.viewpager.widget.ViewPager[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/androidx.viewpager.widget.ViewPager[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/androidx.viewpager.widget.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/androidx.recyclerview.widget.RecyclerView[1]',
-        "tabBar":'//androidx.drawerlayout.widget.DrawerLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/androidx.viewpager.widget.ViewPager[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/androidx.viewpager.widget.ViewPager[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]',
-        "loadImage":'//androidx.drawerlayout.widget.DrawerLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/androidx.viewpager.widget.ViewPager[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/androidx.viewpager.widget.ViewPager[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/androidx.viewpager.widget.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ImageView[1]',
-        "search":'//*[@content-desc="搜索"]'
-    }
-    def __init__(self,d):
+    def __init__(self,d:u2.Device):
+        self.d = d
+        # 兴趣标签
         self.tabBar = d(className="android.view.ViewGroup",instance=0).child(className="androidx.recyclerview.widget.RecyclerView",instance=0)
+        # 主内容
         self.postContainer=d(className="androidx.viewpager.widget.ViewPager",instance=2) \
-        .child(className="android.widget.FrameLayout").child(className="android.widget.FrameLayout") \
-        .child(className="android.view.ViewGroup").child(className="androidx.recyclerview.widget.RecyclerView")
-        
-        for key,value in self.widgets.items():
-            selector = d.xpath(value)
-            if selector.wait(timeout=5):
-                setattr(self, key, selector.get())
-            else:
-                setattr(self, key, None)  # 或者抛异常，提示元素没找到
+            .child(className="android.widget.FrameLayout").child(className="android.widget.FrameLayout") \
+            .child(className="android.view.ViewGroup").child(className="androidx.recyclerview.widget.RecyclerView")
+        # 加载符号
+        self.load=d(className="androidx.viewpager.widget.ViewPager",instance=2) \
+            .child(className="android.widget.FrameLayout").child(className="android.widget.FrameLayout") \
+            .child(className="android.view.ViewGroup").child(className="android.widget.ImageView")
+        self.searchButton=d(description="搜索") # 通搜索按钮
+
+    def isLoadNum(self):
+        """获取当前页面子元素个数，通过子元素个数判断是否加载
+        """
+        return self.load.count
     def clickTabBar(self, instance=0):
         """点击兴趣标签
 
@@ -34,6 +34,16 @@ class HomePage():
             instance (int, optional): 索引第几个帖子. Defaults to 0.
         """
         self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3).click()
+    def getPostDescription(self,instance=0):
+        """获取帖子标题和其作者信息
+
+        Args:
+            instance (int, optional): 索引第几个帖子. Defaults to 0.
+
+        Returns:
+            str: 帖子标题
+        """
+        return self.getDescription(self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3))
     def clickLike(self,instance=0):
         """点击帖子点赞
 
@@ -50,20 +60,53 @@ class HomePage():
         Returns:
             int: 点赞数
         """
-        return int(self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3+1).child(className="android.widget.TextView",instance=1).get_text())
-    
-    def slipMainContent(self):
-        slip(self.d,self.mainContentXpath,1,0.3,1)
-    def updateMainContent(self):
-        slip(self.d,self.mainContentXpath,0,0.3,1)
-    def clickPost(self):
-        self.getPost().click()
-    def getPost(self):
-        selector = self.d.xpath('//*[contains(@content-desc, "笔记") or contains(@content-desc, "视频")]')
-        return xmlElementToUiObject(self.d,selector)
-    def clickSearch(self):
-        if self.search:
-            self.search.click()
+        likeNumStr=self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3+1).child(className="android.widget.TextView",instance=1).get_text()
+        if "万" in likeNumStr:
+            likeNum=float(likeNumStr.split("万")[0])
+            # 转换为实际数值（1万 = 10000）
+            likeNum = int(likeNum * 10000)
         else:
-            raise ValueError("搜索元素未找到")
+            likeNum=int(likeNumStr)
+        return likeNum
+        
+    def slipPostContainer(self):
+        """向下滑动内容
+        """
+        self.slip(self.postContainer,1,0.3,1)
+    def updatePostContainer(self):
+        """刷新内容
+        """
+        self.slip(self.postContainer,0,0.3,1)
+    def clickSearch(self):
+        """点击搜索按钮
+        """
+        self.searchButton.click()
+
+    def slip(self,el,direction=1,duration=0.3,count=1):
+        bounds=el.bounds()
+        top=bounds[1]
+        bottom=bounds[3]
+        length=bottom-top
+        for i in range(count):
+           start_x = (bounds[0] + bounds[2]) // 2
+           start_y = bottom - int(length * 0.2)
+           end_x=start_x
+           end_y = top + int(length * 0.2)
+           if direction == 1:
+                self.d.swipe(start_x, start_y, end_x, end_y, duration)
+           else:
+                self.d.swipe(end_x, end_y,start_x, start_y,duration)
+                
+    def getDescription(self,el:u2.UiObject)->str:
+        """获取元素的描述
+
+        Args:
+            el (u2.UiObject): _description_
+
+        Returns:
+            str: _description_
+        """
+        info=el.info
+        return info.get('contentDescription')
+    
         

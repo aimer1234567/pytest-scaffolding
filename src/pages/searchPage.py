@@ -1,17 +1,9 @@
 class SearchPage():
-    widgets={
-        "searchInput":'//*[@text="搜索, "]',
-        "searchButton":'//*[@text="搜索"]',
-    }
     def __init__(self,d):
         self.d = d
-        for key,value in self.widgets.items():
-            selector = d.xpath(value)
-            if selector.wait(timeout=5):
-                setattr(self, key,selector)
-            else:
-                setattr(self, key, None)  # 或者抛异常，提示元素没找到
+        self.searchButton=d(className="android.widget.RelativeLayout").child(className="android.widget.Button",text="搜索")
+        self.searchInput=d(className="android.widget.RelativeLayout").child(className="android.widget.EditText")
     
     def input(self,text):
-        self.searchInput.set_text(text)
+        self.searchInput.send_keys(text)
         self.searchButton.click()
