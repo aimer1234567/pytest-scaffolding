@@ -5,7 +5,7 @@ postContainer=d(className="android.view.ViewGroup") \
         .child(className="android.widget.RelativeLayout") \
         .child(className="android.widget.ImageView",instance=0).click()
         
-class SearchPage():
+class SearchResultPage():
     def __init__(self,d):
         self.d = d
         
