@@ -1,5 +1,5 @@
 import uiautomator2 as u2
-from utils.xml_tools import xmlElementToUiObject,slip
+from utils.ui_object_tools import slip
 class HomePage():
     def __init__(self,d:u2.Device):
         self.d = d
@@ -34,6 +34,17 @@ class HomePage():
             instance (int, optional): 索引第几个帖子. Defaults to 0.
         """
         self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3).click()
+    def clickTextPostRandom(self):
+        """点击文字帖子非广告，随机点击一个
+        """
+        for i in range(3):
+            if self.getPostDescription(instance=i).split(" ")[0]=="笔记" and ("商业" not in self.getPostDescription(instance=i)):
+                self.clickPost(instance=i)
+                return
+        slip(self.d,self.postContainer,1,0.3,2)
+        self.clickTextPostRandom()
+            
+        self.postContainer.child(className="android.widget.FrameLayout",instance=1).click()
     def getPostDescription(self,instance=0):
         """获取帖子标题和其作者信息
 
@@ -43,7 +54,10 @@ class HomePage():
         Returns:
             str: 帖子标题
         """
-        return self.getDescription(self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3))
+        element = self.postContainer.child(className="android.widget.FrameLayout", instance=instance*3)
+        if not element.exists:
+            raise Exception(f"帖子索引 {instance} 没有发现")
+        return self.getDescription(element)
     def clickLike(self,instance=0):
         """点击帖子点赞
 
@@ -72,30 +86,15 @@ class HomePage():
     def slipPostContainer(self):
         """向下滑动内容
         """
-        self.slip(self.postContainer,1,0.3,1)
+        slip(self.d,self.postContainer,1,0.3,2)
     def updatePostContainer(self):
         """刷新内容
         """
-        self.slip(self.postContainer,0,0.3,1)
+        slip(self.d,self.postContainer,0,0.3,1)
     def clickSearch(self):
         """点击搜索按钮
         """
         self.searchButton.click()
-
-    def slip(self,el,direction=1,duration=0.3,count=1):
-        bounds=el.bounds()
-        top=bounds[1]
-        bottom=bounds[3]
-        length=bottom-top
-        for i in range(count):
-           start_x = (bounds[0] + bounds[2]) // 2
-           start_y = bottom - int(length * 0.2)
-           end_x=start_x
-           end_y = top + int(length * 0.2)
-           if direction == 1:
-                self.d.swipe(start_x, start_y, end_x, end_y, duration)
-           else:
-                self.d.swipe(end_x, end_y,start_x, start_y,duration)
                 
     def getDescription(self,el:u2.UiObject)->str:
         """获取元素的描述
@@ -106,7 +105,14 @@ class HomePage():
         Returns:
             str: _description_
         """
-        info=el.info
-        return info.get('contentDescription')
+        try:
+            # 检查元素是否存在
+            if el.exists:
+                info = el.info
+                return info.get('contentDescription', '')
+            else:
+                return ''  
+        except Exception as e:
+            return ''
     
         
