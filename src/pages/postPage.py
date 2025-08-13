@@ -1,4 +1,4 @@
-from utils.ui_object_tools import slip
+from utils.ui_object_tools import slip,clickSafe
 import uiautomator2 as u2 
 class PostPage():
     def __init__(self,d:u2.Device):
@@ -22,8 +22,7 @@ class PostPage():
     def clickReview(self):
         """点击评论按钮
         """
-        if self.reviewButton.exists(timeout=5):
-            self.reviewButton.click()
+        clickSafe(self.reviewButton)
         return self
     def isAdButton(self):
         if self.adButton1.exists() or self.adButton2.exists():
@@ -43,7 +42,8 @@ class PostPage():
     def clickSendReview(self):
         """点击发送评论按钮
         """
-        self.sendReviewButton.click()
+        el=self.sendReviewButton
+        clickSafe(el)
         
     def isSendReview(self):
         """判断评论是否发送成功

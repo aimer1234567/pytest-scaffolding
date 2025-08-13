@@ -1,5 +1,5 @@
 import uiautomator2 as u2
-from utils.ui_object_tools import slip
+from utils.ui_object_tools import slip,clickSafe
 class HomePage():
     def __init__(self,d:u2.Device):
         self.d = d
@@ -25,7 +25,8 @@ class HomePage():
         Args:
             instance (int, optional): 索引第几个标签. Defaults to 0.
         """
-        self.tabBar.child(className="android.widget.FrameLayout",instance=instance).click()
+        el=self.tabBar.child(className="android.widget.FrameLayout",instance=instance)
+        clickSafe(el)
         
     def clickPost(self,instance=0):
         """点击帖子
@@ -33,7 +34,8 @@ class HomePage():
         Args:
             instance (int, optional): 索引第几个帖子. Defaults to 0.
         """
-        self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3).click()
+        el=self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3)
+        clickSafe(el)
     def clickTextPostRandom(self):
         """点击文字帖子非广告，随机点击一个
         """
@@ -44,7 +46,8 @@ class HomePage():
         slip(self.d,self.postContainer,1,0.3,2)
         self.clickTextPostRandom()
             
-        self.postContainer.child(className="android.widget.FrameLayout",instance=1).click()
+        el=self.postContainer.child(className="android.widget.FrameLayout",instance=1)
+        clickSafe(el)
     def getPostDescription(self,instance=0):
         """获取帖子标题和其作者信息
 
@@ -64,7 +67,8 @@ class HomePage():
         Args:
             instance (int, optional): 索引第几个帖子. Defaults to 0.
         """
-        self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3+1).child(className="android.widget.TextView",instance=1).click()
+        el=self.postContainer.child(className="android.widget.FrameLayout",instance=instance*3+1).child(className="android.widget.TextView",instance=1)
+        clickSafe(el)
     def getLikeNum(self,instance=0):
         """获取帖子点赞数
 
@@ -94,7 +98,8 @@ class HomePage():
     def clickSearch(self):
         """点击搜索按钮
         """
-        self.searchButton.click()
+        el=self.searchButton
+        clickSafe(el)
                 
     def getDescription(self,el:u2.UiObject)->str:
         """获取元素的描述

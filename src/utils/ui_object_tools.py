@@ -26,3 +26,9 @@ def isCurrentActivity(d, target_activity: str) -> bool:
         print(f"获取当前 Activity 失败: {e}")
         return False
     
+def clickSafe(el,timeout=5):
+    el.wait(timeout=timeout)
+    if el.exists:
+        el.click()
+    else:
+        raise Exception("元素不存在或点击失败")

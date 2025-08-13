@@ -1,4 +1,4 @@
-        
+from utils.ui_object_tools import clickSafe
 class SearchResultPage():
     def __init__(self,d):
         self.d = d
@@ -11,12 +11,13 @@ class SearchResultPage():
         """
         if instance < 1 or instance > 4:
             raise ValueError("索引要在1到4之间")
-        self.d(className="android.view.ViewGroup") \
+        el=self.d(className="android.view.ViewGroup") \
             .child(className="androidx.viewpager.widget.ViewPager",instance=0).child(className="android.view.ViewGroup") \
             .child(className="android.widget.FrameLayout").child(className="androidx.recyclerview.widget.RecyclerView") \
             .child(className="android.widget.FrameLayout",instance=instance*2) \
             .child(className="android.widget.RelativeLayout") \
-            .child(className="android.widget.ImageView",instance=0).click()
+            .child(className="android.widget.ImageView",instance=0)
+        clickSafe(el)
     def isPost(self,instance:int=1):
         """判断帖子是否存在
 

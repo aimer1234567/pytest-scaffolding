@@ -1,3 +1,4 @@
+from utils.ui_object_tools import clickSafe
 class SearchPage():
     def __init__(self,d):
         self.d = d
@@ -6,4 +7,4 @@ class SearchPage():
     
     def input(self,text):
         self.searchInput.send_keys(text)
-        self.searchButton.click()
+        clickSafe(self.searchButton)
