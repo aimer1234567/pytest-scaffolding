@@ -31,4 +31,4 @@ def clickSafe(el,timeout=5):
     if el.exists:
         el.click()
     else:
-        raise Exception("元素不存在或点击失败")
+        raise Exception("元素不存在")

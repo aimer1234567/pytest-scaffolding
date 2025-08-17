@@ -1,4 +1,4 @@
 import pytest
 
 if __name__ == '__main__':
-    pytest.main(['-v', '--tb=short'])
+    pytest.main(['-s','--alluredir=allure_dir'])

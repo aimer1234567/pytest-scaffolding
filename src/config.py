@@ -6,9 +6,9 @@ from pages.homePage import HomePage
 from pages.searchPage import SearchPage
 from pages.searchResultPage import SearchResultPage
 from pages.postPage import PostPage
+
 data_mapping.DataMappingConfig.mapping_folder = "data"
-data_mapping.DataMappingConfig.default_file = ".txt"
- 
+
 @pytest.fixture(scope="session")
 def test_init():
     d = u2.connect('5DNNXCAAFQPN9LOR')
